@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #fff;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  font-family: "work sans", Arial, sans-serif;
+  font-weight: 300;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgb(0, 0, 0, 0.7)),
+    url(./header-img.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.header-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.header-text {
+  margin-bottom: 100px;
+}
+
+h1 {
+  font-size: 500%;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 200%;
+  color: #fff;
+  font-weight: 400;
+}
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 200px;
+}
+
+.btn-full:link,
+.btn-full:visited {
+  background-color: #ed07b7;
+  color: #fff;
+}
+.btn-full:hover,
+.btn-full:active {
+  background-color: #bd0592;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+  border: 2px solid #ed07b7;
+  color: #ed07b7;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  background-color: #bd0592;
+  color: #fff;
+}
+
+.main-nav {
+  list-style: none;
+  float: right;
+  margin-top: 50px;
+}
+.main-nav li {
+  display: inline-block;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: border-bottom 0.5s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 1px solid #ed07b7;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  float: left;
+}
+
+.laptop-image {
+  width: 80%;
+}
+
+.about-heading {
+  color: #000;
+  font-size: 250%;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+.about-para {
+  color: #555;
+  margin-bottom: 50px;
+}
+.about-box {
+  margin-top: 150px;
+}
+
+.about-box:first-child {
+  text-align: left;
+  padding: 0, 5%;
+}
+
+.about-box:last-child {
+  text-align: right;
+}
+
+.about-section {
+  padding-bottom: 20px;
+}
+
+/* Work-Section */
+
+.section-heading {
+  font-size: 250%;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 120px;
+}
+.section-sub-heading {
+  font-size: 150%;
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.section-sub-heading::after {
+  display: block;
+  height: 2px;
+  width: 100px;
+  background-color: #ed07b7;
+  content: "";
+  margin: 30px auto 0 auto;
+}
+.work-section {
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.work-portfolio {
+  margin-top: 10px;
+  list-style: none;
+  width: 100%;
+}
+
+.work-portfolio li {
+  display: block;
+  width: 25%;
+  float: left;
+}
+
+.port-image {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.port-image img {
+  width: 100%;
+  opacity: 0.7;
+  height: auto;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.work-para {
+  color: #fff;
+}
+
+.port-image img:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+  visibility: hidden;
+}
+
+.services-section {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.big-icon {
+  font-size: 250%;
+  color: #6920b0;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.service-heading {
+  font-size: 150%;
+  margin-bottom: 30px;
+  font-weight: 400;
+}
+.service-para {
+  color: #555;
+  font-size: 90%;
+  margin-bottom: 20px;
+}
+
+.service-link {
+  color: #6920b0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.service-box {
+  padding: 1% 3%;
+}
+.partners-section {
+  text-align: center;
+}
+.partner-logo {
+  width: 65%;
+  height: auto;
+}
+
+.testimonials-section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(./header-img.jpg);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+}
+.testimonial-heading {
+  font-size: 250%;
+  margin-bottom: 20px;
+  margin-top: 150px;
+}
+.testimonial-box {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+blockquote {
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+}
+
+blockquote:before {
+  content: "\201C";
+}
